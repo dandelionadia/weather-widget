@@ -57,13 +57,16 @@ body {
   background-color: #fff;
   margin: 0;
   padding: 1rem;
-  font-weight: bold;
   color: rgb(122, 111, 111);
 }
 
 .weather__day {
   list-style-type: none;
   display: flex;
+}
+
+.weather__day--selected {
+  font-weight: bold;
 }
 
 .weather__day > span:first-child {
