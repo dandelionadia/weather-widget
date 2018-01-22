@@ -80,3 +80,7 @@ body {
 .weather__day:not(:last-child) {
   margin-bottom: 10px;
 }
+
+.degree::after {
+  content: '°';
+}

@@ -14,24 +14,24 @@
       <div>
         <span class="weather__status">Perfect night</span>
         <span class="weather__city">San Francisco</span>
-        <span class="weather__degree">14<sup>o</sup></span>
+        <span class="weather__degree degree">14</span>
       </div>
     </div>
     <div>
       <ul class="weather__week">
         <li class="weather__day weather__day--selected">
           <span>monday</span>
-          <span>15<sup>o</sup>C</span>
+          <span class="weather__day-degree degree">15</span>
           <span>w</span>
         </li>
         <li class="weather__day">
           <span>monday</span>
-          <span>15<sup>o</sup>C</span>
+          <span class="weather__day-degree degree">16</span>
           <span>w</span>
         </li>
         <li class="weather__day">
           <span>monday</span>
-          <span>15<sup>o</sup>C</span>
+          <span class="weather__day-degree degree">17</span>
           <span>w</span>
         </li>
       </ul>
@@ -44,6 +44,8 @@
       $(".weather__day").on("click", function() {
         $(".weather__day").removeClass("weather__day--selected");
         $(this).addClass("weather__day--selected");
+        
+        $(".weather__degree").text($(this).children(".weather__day-degree").text());
       });
     });
   </script>
