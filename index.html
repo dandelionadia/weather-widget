@@ -20,24 +20,28 @@
     <div>
       <ul class="weather__week">
         <li class="weather__day weather__day--selected">
-          <span>monday</span>
+          <span>Monday</span>
           <span class="weather__day-degree degree">15</span>
-          <span>w</span>
+          <span><i class="weather__icon" data-feather="cloud-drizzle"></i></span>
         </li>
         <li class="weather__day">
-          <span>monday</span>
+          <span>Tuesday</span>
           <span class="weather__day-degree degree">16</span>
-          <span>w</span>
+          <span><i class="weather__icon" data-feather="wind"></i></span>
         </li>
         <li class="weather__day">
-          <span>monday</span>
+          <span>Wednesday</span>
           <span class="weather__day-degree degree">17</span>
-          <span>w</span>
+          <span><i class="weather__icon" data-feather="sun"></i></span>
         </li>
-      </ul>
+      </ul> 
     </div>
   </div>
 
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
   <script src="./jquery-3.3.1.js"></script>
   <script>
     $(document).ready(function() {

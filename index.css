@@ -63,6 +63,7 @@ body {
 .weather__day {
   list-style-type: none;
   display: flex;
+  cursor: pointer;
 }
 
 .weather__day--selected {
@@ -83,4 +84,10 @@ body {
 
 .degree::after {
   content: '°';
+}
+
+.weather__icon {
+  height: 1rem;
+  width: 1rem;
+  vertical-align: bottom;
 }
