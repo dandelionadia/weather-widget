@@ -23,5 +23,9 @@ $(document).ready(function() {
     // взяти наступний статус із "data-status" атрибуту даного дня і оновити у верхньому блоці
     var nextStatus = $(this).data("status");
     $(".weather__status").text(nextStatus);
+
+    //
+    var nextImage = $(this).data("image");
+    $(".weather__overview").css("background-image", `url(./images/${nextImage})`);
   });
 });

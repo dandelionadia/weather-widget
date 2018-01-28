@@ -13,7 +13,8 @@ body {
 
 .weather__overview {
   position: relative;
-  background-image: url('san-francisco.png');
+  background-image: url('./images/san-francisco.png');
+  background-position: center;
   background-size: cover;
   color: white;
   height: 300px;
@@ -30,7 +31,7 @@ body {
 
 .weather__overview::before {
   content: '';
-  opacity: 0.85;
+  opacity: 0.75;
   /* background-color: #344966; */
   background-image: linear-gradient(#344966, #90AAC5);
   position: absolute;
