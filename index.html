@@ -14,22 +14,24 @@
       <div>
         <span class="weather__status">Perfect night</span>
         <span class="weather__city">San Francisco</span>
+        <!-- "degree" клас значку градус -->
         <span class="weather__degree degree">14</span>
       </div>
     </div>
     <div>
       <ul class="weather__week">
-        <li class="weather__day weather__day--selected">
+        <!-- "weather__day--selected" клас обраного дня  -->
+        <li class="weather__day weather__day--selected" data-status="Clouds">
           <span>Monday</span>
           <span class="weather__day-degree degree">15</span>
           <span><i class="weather__icon" data-feather="cloud-drizzle"></i></span>
         </li>
-        <li class="weather__day">
+        <li class="weather__day" data-status="Windy"> 
           <span>Tuesday</span>
           <span class="weather__day-degree degree">16</span>
           <span><i class="weather__icon" data-feather="wind"></i></span>
         </li>
-        <li class="weather__day">
+        <li class="weather__day" data-status="Sunny">
           <span>Wednesday</span>
           <span class="weather__day-degree degree">17</span>
           <span><i class="weather__icon" data-feather="sun"></i></span>
@@ -38,20 +40,14 @@
     </div>
   </div>
 
+  <!-- підключення бібліотеки іконок -->
   <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
   <script>
-    feather.replace()
+    feather.replace();
   </script>
+
+  <!-- підключення біліотеки jQuery -->
   <script src="./jquery-3.3.1.js"></script>
-  <script>
-    $(document).ready(function() {
-      $(".weather__day").on("click", function() {
-        $(".weather__day").removeClass("weather__day--selected");
-        $(this).addClass("weather__day--selected");
-        
-        $(".weather__degree").text($(this).children(".weather__day-degree").text());
-      });
-    });
-  </script>
+  <script src="./index.js"></script>
 </body>
 </html>
