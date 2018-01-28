@@ -13,12 +13,13 @@ body {
 
 .weather__overview {
   position: relative;
-  background-image: url('./images/san-francisco.png');
+  background-image: url('./images/san-francisco.jpg');
   background-position: center;
   background-size: cover;
   color: white;
   height: 300px;
   display: flex;
+  transition: background-image 1s ease;
 
   /* вирівнює по х(з ліва на право) */
   justify-content: center;
