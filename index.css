@@ -13,7 +13,6 @@ body {
 
 .weather__overview {
   position: relative;
-  background-image: url('./images/san-francisco.jpg');
   background-position: center;
   background-size: cover;
   color: white;
@@ -84,7 +83,7 @@ body {
   margin-bottom: 16px;
 }
 
-.degree::after {
+.degree:not(:empty)::after {
   content: '°';
 }
 
