@@ -6,7 +6,9 @@ body {
 .weather {
   width: 320px;
   border-radius: 10px;
+  /* без прокрутки */
   overflow: hidden;
+  /* додає елементу тінь з у певних частинах */
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
   margin: auto;
 }
@@ -18,9 +20,10 @@ body {
   color: white;
   height: 300px;
   display: flex;
+  /* плавний перехід між двома станами елементів */
   transition: background-image 1s ease;
 
-  /* вирівнює по х(з ліва на право) */
+  /* вирівнює по х(з л на п) */
   justify-content: center;
 
   /* вирівнює У */
@@ -31,6 +34,7 @@ body {
 
 .weather__overview::before {
   content: '';
+  /* рівень прозорості елемента */
   opacity: 0.75;
   /* background-color: #344966; */
   background-image: linear-gradient(#344966, #90AAC5);
@@ -43,8 +47,11 @@ body {
 .weather__status {
   display: block;
   margin-bottom: .5rem;
+  /* розмір */
   font-size: 1.15rem;
+  /* жирність */
   font-weight: bold;
+  /* перша буква кодного слова з великої літери */
   text-transform: capitalize;
 }
 
